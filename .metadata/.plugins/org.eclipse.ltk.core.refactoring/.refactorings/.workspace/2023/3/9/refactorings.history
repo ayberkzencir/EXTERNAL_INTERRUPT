@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;EXTI/Drivers/MODULS/MODULS&apos;" deleteContents="false" description="Delete resource &apos;EXTI/Drivers/MODULS/MODULS&apos;" element1="/EXTI/Drivers/MODULS/MODULS" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1677856510488"/>&#x0A;<refactoring comment="Delete resource &apos;EXTI/Drivers/MODULS/EXTI.h&apos;" deleteContents="false" description="Delete resource &apos;EXTI/Drivers/MODULS/EXTI.h&apos;" element1="/EXTI/Drivers/MODULS/EXTI.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1677856576291"/>
+</session>

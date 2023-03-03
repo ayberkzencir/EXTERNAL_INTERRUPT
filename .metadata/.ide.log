@@ -783,3 +783,35 @@
 2023-03-03 11:28:41,111 [INFO] ApiDb:451 - User favorites MCUs=[]
 2023-03-03 11:28:41,112 [INFO] ApiDb:447 - Save user favorites file C:\Users\user/.stm32cubeide/favorites.boards.txt: 0 item(s)
 2023-03-03 11:28:41,113 [INFO] ApiDb:451 - User favorites Boards=[]
+2023-03-03 18:17:27,368 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AWT-EventQueue-0" java.awt.IllegalComponentStateException: Native resources unavailable
+2023-03-03 18:17:27,370 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/sun.awt.windows.WWindowPeer.getScreenImOn(Native Method)
+2023-03-03 18:17:27,371 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/sun.awt.windows.WWindowPeer.updateGC(WWindowPeer.java:566)
+2023-03-03 18:17:27,373 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+2023-03-03 18:17:27,375 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+2023-03-03 18:17:27,376 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+2023-03-03 18:17:27,377 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+2023-03-03 18:17:27,378 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2023-03-03 18:17:27,379 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2023-03-03 18:17:27,381 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+2023-03-03 18:17:27,382 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+2023-03-03 18:17:27,383 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+2023-03-03 18:17:27,384 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2023-03-03 18:17:27,385 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2023-03-03 18:17:27,386 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+2023-03-03 18:17:27,387 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+2023-03-03 18:17:27,389 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+2023-03-03 18:17:27,391 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+2023-03-03 18:17:27,392 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+2023-03-03 18:17:27,393 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+2023-03-03 18:17:27,394 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2023-03-03 18:17:29,008 [INFO] JxBrowserEngine:114 - Initiate JxBrowser Engine with user profile folder
+2023-03-03 18:17:29,904 [INFO] WebAppUi:459 - Close the Jxbrowser engine manually
+2023-03-03 18:17:29,938 [INFO] WebAppUi:462 - Profiles folder deleted
+2023-03-03 18:17:30,342 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2023-03-03 18:18:21,005 [INFO] Activator:179 - 
+
+
+2023-03-03 18:18:21,007 [INFO] Activator:180 - !SESSION log4j initialized
+2023-03-03 18:18:47,812 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2023-03-03 18:18:47,813 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2023-03-03 18:18:47,814 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.

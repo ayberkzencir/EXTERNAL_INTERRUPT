@@ -1,18 +1,14 @@
-11:40:21 **** Incremental Build of configuration Debug for project EXTI ****
+18:24:20 **** Build of configuration Debug for project EXTI ****
 make -j16 all 
 arm-none-eabi-gcc "../Drivers/MODULS/EXTI.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/MODULS/EXTI.d" -MT"Drivers/MODULS/EXTI.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/MODULS/EXTI.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "EXTI.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\Documents\GitHub\EXTERNAL_INTERRUPT\EXTI\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: EXTI.elf
- 
-arm-none-eabi-size   EXTI.elf 
-arm-none-eabi-objdump -h -S  EXTI.elf  > "EXTI.list"
-   text	   data	    bss	    dec	    hex	filename
-  31832	    152	   3592	  35576	   8af8	EXTI.elf
-Finished building: default.size.stdout
- 
-Finished building: EXTI.list
- 
+../Core/Src/main.c:4:10: fatal error: EXTI.h: No such file or directory
+    4 | #include "EXTI.h"
+      |          ^~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
 
-11:40:22 Build Finished. 0 errors, 0 warnings. (took 1s.85ms)
+18:24:21 Build Failed. 3 errors, 0 warnings. (took 585ms)
 
