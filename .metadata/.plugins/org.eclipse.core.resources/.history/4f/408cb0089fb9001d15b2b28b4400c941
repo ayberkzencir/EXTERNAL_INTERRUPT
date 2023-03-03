@@ -1,7 +1,7 @@
 
 #include "main.h"
 #include "usb_host.h"
-
+#include "EXTI.h"
 
 I2C_HandleTypeDef hi2c1;
 

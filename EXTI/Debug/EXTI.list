@@ -29,23 +29,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  12 .ARM.attributes 00000030  00000000  00000000  00020090  2**0
                   CONTENTS, READONLY
- 13 .debug_info   000157d2  00000000  00000000  000200c0  2**0
+ 13 .debug_info   000157ca  00000000  00000000  000200c0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_abbrev 000036d5  00000000  00000000  00035892  2**0
+ 14 .debug_abbrev 000036c4  00000000  00000000  0003588a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_aranges 00001110  00000000  00000000  00038f68  2**3
+ 15 .debug_aranges 00001110  00000000  00000000  00038f50  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_ranges 00000fa0  00000000  00000000  0003a078  2**3
+ 16 .debug_ranges 00000fa0  00000000  00000000  0003a060  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_macro  00023699  00000000  00000000  0003b018  2**0
+ 17 .debug_macro  00023699  00000000  00000000  0003b000  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   0001720f  00000000  00000000  0005e6b1  2**0
+ 18 .debug_line   0001720b  00000000  00000000  0005e699  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    000cb52a  00000000  00000000  000758c0  2**0
+ 19 .debug_str    000cb52a  00000000  00000000  000758a4  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .comment      00000050  00000000  00000000  00140dea  2**0
+ 20 .comment      00000050  00000000  00000000  00140dce  2**0
                   CONTENTS, READONLY
- 21 .debug_frame  000048c0  00000000  00000000  00140e3c  2**2
+ 21 .debug_frame  000048c0  00000000  00000000  00140e20  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -353,33 +353,23 @@ Disassembly of section .text:
  80004ca:	bf00      	nop
 
 080004cc <main>:
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
+static void MX_SPI1_Init(void);
+void MX_USB_HOST_Process(void);
+
+
 int main(void)
 {
  80004cc:	b580      	push	{r7, lr}
  80004ce:	af00      	add	r7, sp, #0
-  /* USER CODE END 1 */
 
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
  80004d0:	f000 fbf0 	bl	8000cb4 <HAL_Init>
-  /* USER CODE BEGIN Init */
 
-  /* USER CODE END Init */
 
-  /* Configure the system clock */
   SystemClock_Config();
  80004d4:	f000 f80e 	bl	80004f4 <SystemClock_Config>
-  /* USER CODE BEGIN SysInit */
 
-  /* USER CODE END SysInit */
 
-  /* Initialize all configured peripherals */
   MX_GPIO_Init();
  80004d8:	f000 f90a 	bl	80006f0 <MX_GPIO_Init>
   MX_I2C1_Init();
@@ -390,11 +380,10 @@ int main(void)
  80004e4:	f000 f8ce 	bl	8000684 <MX_SPI1_Init>
   MX_USB_HOST_Init();
  80004e8:	f006 ff50 	bl	800738c <MX_USB_HOST_Init>
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
+
   while (1)
   {
-    /* USER CODE END WHILE */
+
     MX_USB_HOST_Process();
  80004ec:	f006 ff74 	bl	80073d8 <MX_USB_HOST_Process>
  80004f0:	e7fc      	b.n	80004ec <main+0x20>
